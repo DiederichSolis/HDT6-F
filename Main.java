@@ -28,12 +28,16 @@ public class Main {
 		
 			do {
 				try {
-					System.out.println("Introduzca el tipo de mapa que desea utilizar");		
-					System.out.println("1.HashMap.    2.LinkedHashMap.    3.TreeMap.");
+					System.out.println("----------------------------------------------");
+					System.out.println("Bienvenido");
+					System.out.println("Escoga el mapa que desea usar: ");		
+					System.out.println("1.)HashMap");
+					System.out.println("2.)LinkedHashMap");
+					System.out.println("3.)TreeMap");
 					tipo = teclado.nextInt();
 					
 				}catch (Exception e) {
-					System.out.println("Introduzca correctamente el numero");
+					System.out.println("Lamento, favor de obsevar bien las instrucciones");
 					teclado.nextLine();
 				}
 			}while (tipo>3||tipo<0);
