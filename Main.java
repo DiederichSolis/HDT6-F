@@ -46,15 +46,16 @@ public class Main {
 		InterfaceMap<String,String> map = factory.getMap(tipo);//Cartas disponibles
 		InterfaceMap<String,String> mapC = factory.getMap(tipo); //Castas del usuario
 		if (map instanceof Hash) {
-			System.out.println("El mapa a utilizar es: HashMap");
+			System.out.println("HashMap");
 		}
 		else if (map instanceof Tree) {
-			System.out.println("El mapa a utilizar es: TreeMap");
+			System.out.println("TreeMap");
 		}
 		else if (map instanceof Linked) {
-			System.out.println("El mapa a utilizar es: LinkedHashMap");
+			System.out.println("LinkedHashMap");
 		}
 		//String fichero = args[0];
+		System.out.println("Realice la siguiente instruccion para la lectura del txt");
 		System.out.println("Introduzca el nombre del documento (cards_desc.txt)");
 		String documento;
 		teclado.nextLine();
